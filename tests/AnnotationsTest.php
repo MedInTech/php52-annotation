@@ -1,6 +1,7 @@
-<?php /** @noinspection PhpUnusedPrivateFieldInspection */
+<?php
 
-require_once __DIR__ . '/../src/Annotations.php';
+/** @noinspection PhpUnusedPrivateFieldInspection */
+/** @noinspection PhpUnusedPrivateMethodInspection */
 
 use PHPUnit\Framework\TestCase;
 
@@ -184,5 +185,3 @@ class FullAnnotationsClass_b86b10e21760c22a13e1ac346cbe725b
    */
   private static function prisf() { }
 }
-
-
