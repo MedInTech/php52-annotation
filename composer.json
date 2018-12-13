@@ -1,0 +1,22 @@
+{
+  "name": "arth/php52-annotation",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Alexander Deider",
+      "email": "arth.inbox@gmail.com"
+    }
+  ],
+  "autoload": {
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.5"
+  },
+  "require": {
+  }
+}
