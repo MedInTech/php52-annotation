@@ -144,6 +144,7 @@ DOC;
       array("/**\n * @a1 re \n * \n */", array('a1' => 're')),
       array("/**\n * @a1 @a2 \n */", array('a1' => true, 'a2' => true)),
       array("/**\n * @a1 \n * @a2 \n */", array('a1' => true, 'a2' => true)),
+      array("/** @var int */", array('var' => 'int')),
     );
   }
 }

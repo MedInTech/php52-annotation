@@ -63,7 +63,7 @@ class MedInTech_Util_Annotations implements ArrayAccess
     $parameters = array();
     preg_match_all(self::REG_PATTERN, $doc, $matches);
     foreach ($matches[1] as $rawParameter) {
-      $rawParameter = trim(preg_replace('/^\s*\*(?:\/?$)?/m', "\n", $rawParameter));
+      $rawParameter = trim(preg_replace('#^\s*\*|\s*\*/$#m', "\n", $rawParameter));
       if (preg_match("/^(\S+)\s+(.+)$/is", $rawParameter, $match)) {
         $parsedValue = self::parseValue($match[2]);
         if (isset($parameters[$match[1]])) {
