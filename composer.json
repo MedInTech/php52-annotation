@@ -1,7 +1,6 @@
 {
   "name": "arth/php52-annotation",
   "license": "proprietary",
-  "keywords":  ["MedInTech_Snake_Loader"],
   "authors": [
     {
       "name": "Alexander Deider",
@@ -15,5 +14,13 @@
     "phpunit/phpunit": "^7.5"
   },
   "require": {
+    "arth/php52-autoload": "*"
+  },
+  "extra": {
+    "autoload": {
+      "class": "MedInTech_Autoload_Snake",
+      "path": "/src",
+      "prefix": "MedInTech_Util"
+    }
   }
 }
